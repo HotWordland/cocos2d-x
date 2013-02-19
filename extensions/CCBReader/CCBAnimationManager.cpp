@@ -457,11 +457,6 @@ void CCBAnimationManager::setFirstFrame(CCNode *pNode, CCBSequenceProperty *pSeq
 
 CCActionInterval* CCBAnimationManager::getEaseAction(CCActionInterval *pAction, int nEasingType, float fEasingOpt)
 {
-    if (dynamic_cast<CCSequence*>(pAction))
-    {
-        return pAction;
-    }
-    
     if (nEasingType == kCCBKeyframeEasingLinear)
     {
         return pAction;
